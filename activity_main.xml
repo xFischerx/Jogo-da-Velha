@@ -1,0 +1,126 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    style="@style/index">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Seja Bem Vindo ao Gashish Game"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:paddingBottom="35dp"
+        android:textColor="@color/black"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:tag="quadrado1"
+            android:onclick="clickQuadrado"
+            android:enabled="false"
+            />
+
+        <Button
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:tag="quadrado2"
+            android:onclick="clickQuadrado"
+            android:enabled="false"/>
+
+        <Button
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:tag="quadrado3"
+            android:onclick="clickQuadrado"
+            android:enabled="false"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:tag="quadrado4"
+            android:onclick="clickQuadrado"
+            android:enabled="false"/>
+
+        <Button
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:tag="quadrado5"
+            android:onclick="clickQuadrado"
+            android:enabled="false"/>
+
+        <Button
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:tag="quadrado6"
+            android:onclick="clickQuadrado"
+            android:enabled="false"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:tag="quadrado7"
+            android:onclick="clickQuadrado"
+            android:enabled="false"/>
+
+        <Button
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:tag="quadrado8"
+            android:onclick="clickQuadrado"
+            android:enabled="false"
+            />
+
+        <Button
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:tag="quadrado9"
+            android:onclick="clickQuadrado"
+            android:enabled="false"/>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="30dp"
+        android:onClick="newGame"
+        android:text="Play" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <RadioButton
+            android:id="@+id/rbX"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="X" />
+
+        <RadioButton
+            android:id="@+id/rbO"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="O" />
+    </RadioGroup>
+
+</LinearLayout>
